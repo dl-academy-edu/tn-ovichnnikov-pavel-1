@@ -1,2 +1,4 @@
-# tn-ovichnnikov-pavel-1
-Учебный репозиторий студента Овичнникова Павла 1 модуль
+# Личный проект "Green"
+
+* Студент [Овчинников Павел][https://t.me/PaulPaul163]
+* Наставник [Tati Nabokova][https://www.behance.net/tati_nabokova]
