@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Open Sans', 'Arial', sans-serif;
     font-weight: 400;
@@ -10,8 +14,21 @@ a {
     text-decoration: none;
 }
 
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
 .undotted {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    font-size: 0;
+    line-height: 0;
+    width: 0;
 }
 
 .button {
@@ -20,7 +37,49 @@ a {
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
+    text-transform: uppercase;
+    display: block;
+    width: 161px;
+    text-align: center;
+    padding: 9px;
+    border: none;
+    cursor: pointer;
 }
+
+.button send {
+    background: #000000;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 9px 22px;
+    gap: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 129px;
+}
+
+.header-menu {
+    margin: 0 auto 0 60px;
+}
+
+.header-list {
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.header-menu a {
+    color: #1E0606;
+    margin-right: 40px;
+}
+
 
 .footer {
     background: #434343;
