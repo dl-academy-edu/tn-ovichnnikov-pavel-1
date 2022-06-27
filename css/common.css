@@ -10,6 +10,11 @@ body {
     color: #1E0606;
 }
 
+.img {
+    display: block;
+    max-width: 100%;
+}
+
 a {
     text-decoration: none;
 }
@@ -38,22 +43,12 @@ a {
     font-size: 16px;
     line-height: 22px;
     text-transform: uppercase;
-    display: block;
+    display: inline-block;
     width: 161px;
     text-align: center;
     padding: 9px;
     border: none;
     cursor: pointer;
-}
-
-.button send {
-    background: #000000;
-    color: #fff;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    padding: 9px 22px;
-    gap: 10px;
 }
 
 .header {
@@ -80,6 +75,7 @@ a {
     margin-right: 40px;
 }
 
+/*FOOTER*/
 
 .footer {
     background: #434343;
@@ -89,9 +85,47 @@ a {
     line-height: 22px;
 }
 
-.link {
-    color: #fff;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+.footer-list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+    padding: 100px 0 0 0;
+}
+
+.footer-list li {
+    margin-bottom: 15px;
+}
+
+.networks {
+    display: flex;
+}
+
+.networks li {
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+.down {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 100px 0;
+    border-top: 3px solid red;
+}
+
+.star {
+    display: flex;
+    margin-left: 25px;
+}
+
+.line p {
+    border-bottom: 3px solid red;
+    height: 46px;
+}
+
+.star-item {
+    display: flex;
+    align-items: center;
 }
