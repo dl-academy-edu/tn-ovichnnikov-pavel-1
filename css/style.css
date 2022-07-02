@@ -27,7 +27,7 @@
 }
 
 .banner-monstr {
-    margin: -90px 60px -22px 0px;
+    margin: -90px 60px -17px 0px;
 }
 
 .insert {
@@ -38,6 +38,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .button-page {
@@ -86,7 +90,6 @@
     line-height: 46px;
     text-transform: uppercase;
     color: #1E0606;
-    text-align: left;
 }
 
 .category-list {
@@ -135,7 +138,7 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    width: 90%;
+    width: 50%;
     margin: 0 auto 0;
 }
 
@@ -171,9 +174,7 @@
     margin-left: 20px;
 }
 
-
-
-/*delivery*/
+/*DELIVERY*/
 
 .delivery {
     display: flex;
@@ -187,10 +188,31 @@
     font-size: 38px;
     text-transform: uppercase;
     margin: 30px auto 0 0;
+    position: relative;
+}
+
+.delivery-title::after {
+    content: '';
+    position: absolute;
+    width: 326px;
+    height: 55px;
+    left: -60px;
+    top: 38px;
+    background: #70BBDC33;
+}
+
+.selection {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    color: #1E0606;
 }
 
 .delivery-img{
     text-align: left;
+    margin-right: 120px;
 }
 
 .delivery-wrapper {
@@ -207,6 +229,11 @@
     font-weight: 400;
     font-size: 26px;
     line-height: 34px;
+}
+
+.delivery-ul li {
+    margin: 0 0 22px 0;
+    cursor: pointer;
 }
 
 
@@ -226,23 +253,22 @@
 
 .about {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 155px;
 }
 
 .about p {
-    margin: 5px 0 5px 0;
+    margin: 10px 0 20px 0;
 }
 
 .about-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     background: #E1F0F7;
     width: 543px;
-    height: 228px;
-    padding: 0 30px 27px 30px;
-    margin-bottom: 155px;
+    padding: 0 30px 30px;
+}
+
+.about-item:first-child {
+    margin-right: 57px;
 }
 
 .about-title {
@@ -253,11 +279,11 @@
     line-height: 46px;
     text-transform: uppercase;
     color: #1E0606;
-    margin: -20px 0 0;
+    margin: -23px 0 10px;
 }
 
-.map{
-    margin: 10px 0px 0px 0px;
+.map {
+    margin-bottom: -155px;
 }
 
 .about-ul {
@@ -267,3 +293,22 @@
     font-size: 26px;
     line-height: 34px;
 }
+
+
+/*POPUP*/
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(125, 151, 218, 0.8);
+}
+
+

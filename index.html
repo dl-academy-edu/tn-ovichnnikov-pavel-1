@@ -33,8 +33,8 @@
                 </li>
             </ul>
         </nav>
-        <button><img src="images/search.svg" alt=""></button>       
-        <a href="contact.html">Contact  Us</a>
+        <button class="search"><img src="images/search.svg" alt=""></button>       
+        <a href="contact.html" class="header-contact">Contact  Us</a>
     </header>
    
     <main class="container">
@@ -60,7 +60,7 @@
                 <li class="banner-item">
                     <h1 class="banner-title">THE OOH NOO COLLECTION</h1>
                     <p class="designed">Designed in Slovenia</p>
-                    <a href="#" class="button button-secondary">EXPLORE NOW</a>
+                    <a href="#" class="button">EXPLORE NOW</a>
                 </li> 
                 <li class="banner-item">
                     <img src="images/krocozybra.png" class="banner-monstr" alt="">
@@ -83,7 +83,7 @@
                     </a>
                 </li>
                 <li> 
-                    <a href="#" class="img3 category-item">
+                    <a href="toys.html" class="img3 category-item">
                         <h3 class="category-heading">TOYS</h3>
                     </a>
                 </li>
@@ -107,7 +107,7 @@
                 <h2 class="delivery-title">Delivery</h2>
                 <ul class="undotted delivery-ul">
                     <li>
-                        <p>Delivery</p>
+                        <p class="selection">Delivery</p>
                     </li>
                     <li>
                         <p>Guarantee</p>
@@ -116,9 +116,17 @@
                         <p>Credit</p>
                     </li>
                 </ul>
-                <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                <p>What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-                <button class="button button-secondary">LEARN MORE</button>
+                <ul class="undotted">
+                    <li>
+                        <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                    </li>
+                    <li>
+                        <p>What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+                    </li>
+                    <li>
+                        <button class="button">LEARN MORE</button>
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -145,14 +153,13 @@
                 <h2 class="about-title">Design Life Kids</h2>
                 <p class="about-ul">About Us</p>
                 <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                <a href="#" class="button button-secondary">buy now</a>
+                <a href="#" class="button">buy now</a>
             </div>
             <div class="about-item">
                 <h2 class="about-title">Contacts</h2>
                     <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                     <p><img src="images/maps.jpg" class="map" alt=""></p>
             </div>
-            
         </section>
     </main>
 
@@ -162,7 +169,7 @@
                 <li class="line">
                     <p>Navigation</p>
                     <nav>
-                        <ul class="undotted">
+                        <ul class="undotted footer-color">
                             <li>
                                 <a href="#">About Us</a>
                             </li>
@@ -187,7 +194,7 @@
                 <li class="line">
                     <p>Customer Information</p>
                     <nav>
-                        <ul class="undotted">
+                        <ul class="undotted footer-color">
                             <li>
                                 <a href="contact.html">Contact Us</a>
                             </li>
@@ -211,9 +218,9 @@
                 </li>
                 <li class="line">
                     <p>Connect</p>
-                    <form action="#">
-                        <input type="email" placeholder="Email">
-                        <button class="button button-secondary">Join</button>   
+                    <form action="#" class="email-wrapper">
+                        <input type="email" placeholder="Email"  class="email">
+                        <button class="button join">Join</button>   
                     </form>
                     <ul class="undotted networks">
                         <li>
@@ -255,8 +262,8 @@
         
         <div class="container">
             <ul class="undotted down">
-                <li class="star-item">
-                    <p>Company Rating</p>
+                <li class="star-item indent">
+                    <p class="footer-color">Company Rating</p>
                     <ul class="undotted star">
                         <li>
                             <img src="images/Star.svg" alt="">
@@ -276,42 +283,43 @@
                     </ul>
                 </li>
                 <li>
-                    <p>Copyright © 2018 Dlk • Design Life Kids</p>
+                    <p class="footer-color indent">Copyright © 2018 Dlk • Design Life Kids</p>
                 </li>
                 <li>
-                    <a href="https://directlinedev.com/">Web Design — Direct Line Development</a>
+                    <a href="https://directlinedev.com/" class="footer-dl indent">Web Design — Direct Line Development</a>
                 </li>
             </ul>
         </div>
     </footer>
 
-   <section class="container">
-        <h2>Modal Block</h2>
-        <form action="#">
-            <div>
+   <section class="popup">
+        <h2 class="hidden">Modal Block</h2>
+        <form action="#" class="contact-form">
+            <div class="contact-wrapper">
                 <label for="input-name">Name</label>
                 <input type="text" id="input-name" placeholder="Ivan Ivanov">
             </div>
-            <div>
-                <div>
+            <div class="contact-2-column">
+                <div class="contact-wrapper">
                     <label for="input-phone">Phone</label>
                     <input type="text" id="input-phone">
                 </div>
-                <div>
+                <div class="contact-wrapper">
                     <label for="input-email">Email</label>
                     <input type="text" id="input-email">
                 </div>
             </div>
-            <div>
+            <div class="contact-wrapper">
                 <label for="textarea">Message</label>
                 <textarea name="message" id="textarea" cols="30" rows="10"></textarea>
             </div>
 
             <fieldset>
-                <input type="checkbox" id="input-click">
-                <label for="input-click">By clicking on the button, you consent to the processing of your personal data</label>
+                <input type="checkbox" id="input-click" class="checkbox-input" checked>
+                <label for="input-click" class="checkbox-label">By clicking on the button, you consent to the processing of your personal data</label>
             </fieldset>
-        <button type="submit">Submit</button>
+
+            <button class="button send" type="submit">Submit</button>
         </form>
     </section>
 </body>

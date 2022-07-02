@@ -1,0 +1,92 @@
+
+
+.toys-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #1E0606;
+    margin-bottom: 15px;
+}
+
+.toys-banner {
+    background: #e5eaf8;
+    color: #AAAAAA;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.toys-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.toys-box {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+    margin: 42px 0 42px 0;
+}
+
+.toys-box li {
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+    margin-bottom: 15px;
+}
+
+.toys-amount {
+    display: flex;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 33px;
+}
+
+.products p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #1E0606;
+}
+
+.products h2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #1E0606;
+}
+
+.toys-item {
+    width: 380px;
+    justify-content: space-between;
+}
+
+.send {
+    margin-top: 79px;
+}
+
+.toys-home {
+    
+}
+
