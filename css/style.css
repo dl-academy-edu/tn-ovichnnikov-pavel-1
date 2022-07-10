@@ -27,29 +27,47 @@
 }
 
 .banner-monstr {
-    margin: -90px 60px -17px 0px;
+    margin: -94px 587px -12px 0px;
+    background: transparent;
 }
 
 .insert {
     display: flex;
     background-color: #C29974;
     margin-bottom: 90px;
-    height: 39px;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     font-size: 12px;
     line-height: 16px;
     text-transform: uppercase;
     color: #FFFFFF;
+    padding: 11px;
 }
 
-.button-page {
+.button-page,
+.button-page-checked {
     font-size: 5px;
     display: block;
     border: none;
     cursor: pointer;
-    background-color: #EEE4DB;
+    margin-bottom: 11px;
+    width: 31px;
+    height: 3px;
+}
+
+.button-page {
+    background-color: #D6CAC2;
+}
+
+.button-page-checked {
+    background: #725F5B;
+}
+
+.button-page:hover {
+    background: #725F5B;
+}
+
+.button-page-checked {
+    background: #725F5B;
 }
 
 .designed {
@@ -142,6 +160,14 @@
     margin: 0 auto 0;
 }
 
+.category-heading:hover {
+    text-decoration-line: underline;
+}
+
+.category-heading:active {
+    text-decoration-line: underline;
+}
+
 /*arrow*/
 
 .arrow-wrapper{
@@ -189,6 +215,7 @@
     text-transform: uppercase;
     margin: 30px auto 0 0;
     position: relative;
+    cursor: pointer;
 }
 
 .delivery-title::after {
@@ -246,6 +273,7 @@
 .brands-list {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 
@@ -304,11 +332,46 @@
     right: 0;
     bottom: 0;
     z-index: 2;
-    display: flex;
     display: none;
     align-items: center;
     justify-content: center;
     background: rgba(125, 151, 218, 0.8);
+    
 }
+
+.popup-open {
+    display: flex;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.popup-close {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    color: #FFFFFF;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.popup-close:hover {
+    opacity: .7;
+}
+
+.popup-close:active {
+    opacity: .4;
+}
+
+
+
+
+
+
+
+
 
 

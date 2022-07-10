@@ -31,15 +31,21 @@
     color: #818181;
 }
 
-.blog-list p:not(.blog-data) {
-    font-size: 18px;
-    line-height: 25px;
-    color: #1E0606;
-}
-
 .blog-item {
     width: 380px;
     margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+    cursor: pointer;
+}
+
+h2:hover {
+    text-decoration-line: underline;
+}
+
+h2:active {
+    text-decoration-line: underline;
 }
 
 

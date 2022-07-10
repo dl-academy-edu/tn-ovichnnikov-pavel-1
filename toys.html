@@ -19,7 +19,7 @@
 <body>
     <header class="header container">
         <a href="index.html">
-            <img src="images/logo.png" alt="">
+            <img src="images/DLK.jpg" alt="" width="100" height="52">
         </a>
         <nav class="header-menu">
             <ul class="undotted header-list">
@@ -34,8 +34,8 @@
                 </li>
             </ul>
         </nav>
-        <button class="search"><img src="images/search.svg" alt=""></button>       
-        <a href="contact.html">Contact  Us</a>
+        <button class="search"><img src="images/search.jpg" alt="" width="17" height="18"></button>       
+        <a href="contact.html" class="header-contact">Contact  Us</a>
     </header>
 
     <main>
@@ -58,10 +58,18 @@
 
         <div class="toys-banner">
             <form action="#" class="container">
-                <div class="toys-form">
-                    <div>
-                        <p>min=0</p> 
-                        <p>max=500</p>
+                <div class="toys-form"> 
+                    <div class="range">
+                        <label for="cost">Cost</label>
+                        <input type="range" max="500" value="100">
+                        <ul class="undotted cost-list">
+                            <li>
+                                <p>0</p>
+                            </li>
+                            <li>
+                                <p>500</p>
+                            </li>
+                        </ul>            
                     </div>
                     
                     <fieldset class="toys-box">
@@ -90,11 +98,11 @@
                         <legend class="toys-delyvery">Delivery</legend>
                         <ul class="undotted">
                             <li>
-                                <input type="radio" id="inpul-freeshipping" name="report" class="radio-input" checked>
+                                <input type="radio" id="inpul-freeshipping" name="report" class="radio-input">
                                 <label for="inpul-freeshipping" class="radio-label">Free shipping</label>
                             </li>
                             <li>
-                                <input type="radio" id="inpul-fastshipping" name="report" class="radio-input">
+                                <input type="radio" id="inpul-fastshipping" name="report" class="radio-input" checked>
                                 <label for="inpul-fastshipping" class="radio-label">Fast shipping</label>
                             </li>
                         </ul>
@@ -105,19 +113,19 @@
                         <ul class="undotted toys-amount">
                             <li>
                                 <input type="radio" id="inpul-0-5" name="report-amount" class="toys-input" checked>
-                                <label for="inpul-0-5" class="toys-label amount">0-5</label>
+                                <label for="inpul-0-5" class="toys-label">0-5</label>
                             </li>
                             <li>
                                 <input type="radio" id="inpul-10-20" name="report-amount" class="toys-input">
-                                <label for="inpul-10-20" class="toys-label amount">10-20</label>
+                                <label for="inpul-10-20" class="toys-label">10-20</label>
                             </li>
                             <li>
                                 <input type="radio" id="inpul-20-50" name="report-amount" class="toys-input">
-                                <label for="inpul-20-50" class="toys-label amount">20-50</label>
+                                <label for="inpul-20-50" class="toys-label">20-50</label>
                             </li>
                         </ul>
                     </fieldset>
-                    <button class="button send" type="submit">Apply</button>
+                    <button class="button" type="submit">Apply</button>
                 </div>
             </form>
         </div>
@@ -125,44 +133,44 @@
         <section class="container">
             <div>
                 <ul class="undotted products">
-                    <li class="toys-item">
+                    <li class="toys-item" data-tooltip="LEARN MORE">
                         <a href="#">
-                            <img src="images/toys/toys1.jpg" alt="">
+                            <img src="images/toys/toys1.jpg" alt="" width="380" height="385">
                             <h2>SHARKY BEAN BAG CHAIR COVER</h2>
                             <p>$60.00 USD</p>
                         </a>
                     </li>
-                    <li class="toys-item">
+                    <li class="toys-item" data-tooltip="LEARN MORE">
                         <a href="#">
-                            <img src="images/toys/toys2.jpg" alt="">
+                            <img src="images/toys/toys2.jpg" alt="" width="380" height="385">
                             <h2>BRASS DECO FRAMES</h2>
                             <p>$66.00 USD</p>
                         </a>
                     </li>
-                    <li class="toys-item">
+                    <li class="toys-item" data-tooltip="LEARN MORE">
                         <a href="#">
-                            <img src="images/toys/toys3.jpg" alt="">
+                            <img src="images/toys/toys3.jpg" alt="" width="380" height="385">
                             <h2>CIBO FULL APRON</h2>
                             <p>$60.00 USD</p>
                         </a>
                     </li>
-                    <li class="toys-item">
+                    <li class="toys-item" data-tooltip="LEARN MORE">
                         <a href="#">
-                            <img src="images/toys/toys4.jpg" alt="">
+                            <img src="images/toys/toys4.jpg" alt="" width="380" height="385">
                             <h2>GATCHA GATCHA GUMBALL MACHINE</h2>
                             <p>$56.00 USD</p>
                         </a>
                     </li>
-                    <li class="toys-item">
+                    <li class="toys-item" data-tooltip="LEARN MORE">
                         <a href="#">
-                            <img src="images/toys/toys5.jpg" alt="">
+                            <img src="images/toys/toys5.jpg" alt="" width="380" height="385">
                             <h2>CHRISTMAS ADVENT SCENTED CANDLE</h2>
                             <p>$29.00 USD</p>
                         </a>
                     </li>
-                    <li class="toys-item">
+                    <li class="toys-item" data-tooltip="LEARN MORE">
                         <a href="#">
-                            <img src="images/toys/toys6.jpg" alt="">
+                            <img src="images/toys/toys6.jpg" alt="" width="380" height="382">
                             <h2>TANGLE SPINNING TEA LIGHT</h2>
                             <p>$56.00 USD</p>
                         </a>
@@ -171,22 +179,14 @@
             </div>
 
             <div class="blog-page">
-                <button class="button page-arrow page-left"><img src="#" alt=""></button>
-                <ul class="undotted page-numbers">
-                    <li>
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                </ul>
-                <button class="button page-arrow page-right"><img src="#" alt=""></button>
+                <a href="#" class="page-left"></a>
+                <div class="pagination">
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                </div>
+                <a href="#" class="page-right"></a>
             </div>
         </section>
     </main>
@@ -248,7 +248,7 @@
                     <p>Connect</p>
                     <form action="#" class="email-wrapper">
                         <input type="email" placeholder="Email"  class="email">
-                        <button class="button join">Join</button>   
+                        <button class="button">Join</button>   
                     </form>
                     <ul class="undotted networks">
                         <li>
@@ -291,24 +291,21 @@
         <div class="container">
             <ul class="undotted down">
                 <li class="star-item indent">
-                    <p class="footer-color">Company Rating</p>
-                    <ul class="undotted star">
-                        <li>
-                            <img src="images/Star.svg" alt="">
-                        </li>
-                        <li>
-                            <img src="images/Star.svg" alt="">
-                        </li>
-                        <li>
-                            <img src="images/Star.svg" alt="">
-                        </li>
-                        <li>
-                            <img src="images/Star.svg" alt="">
-                        </li>
-                        <li>
-                            <img src="images/Star.svg" alt="">
-                        </li>
-                    </ul>
+
+                    <div class="star">
+                        <input type="radio" id="star-5" name="rating" value="5">
+                        <label for="star-5"></label>	
+                        <input type="radio" id="star-4" name="rating" value="4">
+                        <label for="star-4"></label>    
+                        <input type="radio" id="star-3" name="rating" value="3">
+                        <label for="star-3"></label>  
+                        <input type="radio" id="star-2" name="rating" value="2">
+                        <label for="star-2"></label>    
+                        <input type="radio" id="star-1" name="rating" value="1">
+                        <label for="star-1"></label>
+                        <span class="footer-color">Company Rating</span>
+                       
+                    </div>
                 </li>
                 <li>
                     <p class="footer-color indent">Copyright © 2018 Dlk • Design Life Kids</p>

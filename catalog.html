@@ -19,7 +19,7 @@
 <body>
     <header class="header container">
         <a href="index.html">
-            <img src="images/logo.png" alt="">
+            <img src="images/DLK.jpg" alt="" width="100" height="52">
         </a>
         <nav class="header-menu">
             <ul class="undotted header-list">
@@ -34,8 +34,8 @@
                 </li>
             </ul>
         </nav>
-        <button class="search"><img src="images/search.svg" alt=""></button>       
-        <a href="contact.html">Contact  Us</a>
+        <button class="search"><img src="images/search.jpg" alt="" width="17" height="18"></button>       
+        <a href="contact.html" class="header-contact">Contact  Us</a>
     </header>
 
     <main class="container">
@@ -54,33 +54,33 @@
                 <div>
                     <ul class="undotted catalog-up">
                         <li>
-                            <a href="#" class="img1 catalog-item">
-                                <h3 class="catalog-heading">APPAREL KIDS</h3>
+                            <a href="#" class="img1 catalog-item" width="280" height="270">
+                                <p class="catalog-heading">APPAREL KIDS</p>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="img2 catalog-item">
-                                <h3 class="catalog-heading">HOLIDAY SHOP</h3>
+                            <a href="#" class="img2 catalog-item" width="280" height="270">
+                                <p class="catalog-heading">HOLIDAY SHOP</p>
                             </a>
                         </li>
                         <li> 
-                            <a href="toys.html" class="img3 catalog-item">
-                                <h3 class="catalog-heading">TOYS</h3>
+                            <a href="toys.html" class="img3 catalog-item" width="280" height="270">
+                                <p class="catalog-heading">TOYS</p>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="img4 catalog-item">
-                                <h3 class="catalog-heading">ACCESSORIES</h3>
+                            <a href="#" class="img4 catalog-item" width="280" height="270">
+                                <p class="catalog-heading">ACCESSORIES</p>
                             </a>
                         </li>
                         <li> 
-                            <a href="#" class="img5 catalog-item">
-                                <h3 class="catalog-heading">SALE</h3>
+                            <a href="#" class="img5 catalog-item" width="280" height="270">
+                                <p class="catalog-heading">SALE</p>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="img6 catalog-item">
-                                <h3 class="catalog-heading">APPAREL ADULTS</h3>
+                            <a href="#" class="img6 catalog-item" width="280" height="270">
+                                <p class="catalog-heading">APPAREL ADULTS</p>
                             </a>
                         </li>
                     </ul>
@@ -151,7 +151,7 @@
                     <p>Connect</p>
                     <form action="#" class="email-wrapper">
                         <input type="email" placeholder="Email"  class="email">
-                        <button class="button join">Join</button>   
+                        <button class="button">Join</button>   
                     </form>
                     <ul class="undotted networks">
                         <li>
@@ -194,24 +194,21 @@
         <div class="container">
             <ul class="undotted down">
                 <li class="star-item indent">
-                    <p class="footer-color">Company Rating</p>
-                    <ul class="undotted star">
-                        <li>
-                            <img src="images/Star.svg" alt="">
-                        </li>
-                        <li>
-                            <img src="images/Star.svg" alt="">
-                        </li>
-                        <li>
-                            <img src="images/Star.svg" alt="">
-                        </li>
-                        <li>
-                            <img src="images/Star.svg" alt="">
-                        </li>
-                        <li>
-                            <img src="images/Star.svg" alt="">
-                        </li>
-                    </ul>
+
+                    <div class="star">
+                        <input type="radio" id="star-5" name="rating" value="5">
+                        <label for="star-5"></label>	
+                        <input type="radio" id="star-4" name="rating" value="4">
+                        <label for="star-4"></label>    
+                        <input type="radio" id="star-3" name="rating" value="3">
+                        <label for="star-3"></label>  
+                        <input type="radio" id="star-2" name="rating" value="2">
+                        <label for="star-2"></label>    
+                        <input type="radio" id="star-1" name="rating" value="1">
+                        <label for="star-1"></label>
+                        <span class="footer-color">Company Rating</span>
+                       
+                    </div>
                 </li>
                 <li>
                     <p class="footer-color indent">Copyright © 2018 Dlk • Design Life Kids</p>
