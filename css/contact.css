@@ -31,5 +31,12 @@
     text-transform: uppercase;
     color: #1E0606;
     margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.contact label {
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0;
 }
 

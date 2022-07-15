@@ -36,37 +36,34 @@ a {
     width: 0;
 }
 
-.button,
-.btn-submit {
+.button {
     background: #000000;
-    color: #fff;
+    color: #FFFFFF;
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
     text-transform: uppercase;
     display: inline-block;
     text-align: center;
-    padding: 9px 22px 9px 23px;
+    padding: 9px 22px;
     border: none;
     cursor: pointer;
+    letter-spacing: 0.5px;
 }
 
-.button:hover,
-.btn-submit:hover {
+.button:hover {
     background: #C29974;
 }
 
-.button:active,
-.btn-submit:active {
+.button:active {
     background: #CFAF91;
-}
-
-.button:disabled
-.btn-submit:disabled {
-    background: #C7C1C1;
     cursor: none;
 }
 
+.button:disabled  {
+    background: #C7C1C1;
+    cursor: none;
+}
 
 /*HEADER*/
 
@@ -75,7 +72,7 @@ a {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 129px;
+    margin-bottom: 60px;
 }
 
 .header a:hover,
@@ -102,11 +99,11 @@ a {
 
 .header-menu a {
     color: #1E0606;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .search {
-    margin-right: 10px;
+    margin-right: 16px;
     border: 0;
     background: transparent;
     cursor: pointer;
@@ -114,11 +111,13 @@ a {
 
 
 .header-contact {
+    font-family: 'Open Sans';
     font-weight: 700;
-    display: flex;
-    align-items: center;
     text-transform: uppercase;  
     color: #1E0606;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.8px;
 }
 
 /*CRUMBS*/
@@ -128,28 +127,28 @@ a {
     margin-bottom: 50px;
 }
 
-.home,
-.toys-home {
+.breadcrumbs {
     font-family: 'Crimson Text';
     font-style: italic;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
     color: #1E0606;
-    margin-right: 48px;
+    margin-right: 52px;
     position: relative;
 }
 
-.home::after,
-.toys-home::after {
+.breadcrumbs::before {
     content: '';
     position: absolute;
     background-image: url('../images/crumbs-arrow.svg');
     width: 8px;
     height: 12px;
+    top: 8px;
+    right: -28px;
 }
 
-.home::after {
+/* .breadcrumbs::after {
     top: 8px;
     left: 60px;
 }
@@ -157,7 +156,7 @@ a {
 .toys-home::after {
     top: 8px;
     left: 77px;
-}
+} */
 
 
 .crumbs p {
@@ -188,8 +187,7 @@ a {
     align-items: flex-start;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 20px;
-    padding: 100px 0 0 0;
+    padding: 83px 0 0 0;
 }
 
 .footer-list li {
@@ -201,20 +199,13 @@ a {
 }
 
 .networks li {
-    margin-top: 25px;
+    margin-top: 23px;
     margin-right: 10px;
-}
-
-.down {
-    display: flex;
-    align-items: center;
-    padding: 0 0 100px 0;
-    border-top: 3px solid #666666;
 }
 
 .footer nav,
 .footer form {
-    padding-top: 10px;
+    padding-top: 11px;
 }
 
 /*Rating*/
@@ -268,15 +259,27 @@ a {
 }
 
 .line p {
-    border-bottom: 3px solid #666666;
+    border-bottom: 1px solid #666666;
     width: 380px;
-    padding-bottom: 23px;
+    padding-bottom: 22px;
 }
 
-.star-item {
+.down {
     display: flex;
     align-items: center;
+    border-top: 1px solid #666666;
+    padding: 6px 0 100px 0;
 }
+
+.star {
+    margin-right: 153px;
+    padding-top: 13px;
+}
+
+.down p {
+    margin-right: 109px;
+}
+
 
 .footer-color {
     color: #fff;
@@ -291,11 +294,6 @@ a {
 .footer-dl {
     color: #A2A2A2;
     width: 380px;
-}
-
-.indent {
-    width: 380px;
-    margin-right: 10px;
 }
 
 .footer-dl:hover,
@@ -314,7 +312,7 @@ a {
 
 .email {
     background-color: #666666;
-    width: 295px;
+    width: 300px;
     height: 40px;
     border: 1px solid #666666;
     font-size: 16px;
@@ -354,25 +352,23 @@ a {
     position: relative;
 }
 
-/*CLICKING*/
+/* CLICKING */
 
-.btn-submit {
+.clicking .button {
     margin-top: 20px;
 }
-
-.clicking input[disabled] {
-    opacity: .1;
-    cursor: none;
-}
-
 
 /*INPUT*/
 
 label {
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 16px;
+    line-height: 22px;
     color: #1E0606;
-    margin-bottom: 3px;
+    margin-bottom: 16px;
+}
+
+.cost-list p {
+    margin-top: 11px;
 }
 
 input,
@@ -503,8 +499,9 @@ fieldset {
     opacity: .5;
 }
 
-
-
+.checkbox-input:checked + .checkbox-label::before{
+    background: #FFFFFF;
+}
 
 .toys-label {
     display: flex;
@@ -532,7 +529,7 @@ fieldset {
 
 .blog-page {
     display: flex;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
     justify-content: space-between;
 }
 

@@ -12,7 +12,7 @@
 .catalog-up {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -10px;
+    margin: -11px 0px 50px -9px;
 }
 
 .catalog-up p {
@@ -35,22 +35,22 @@
     margin: 10px;
 }
 
-.catalog-heading {
+.catalog-item p {
     font-weight: 700;
     font-size: 26px;
     line-height: 32px;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    width: 50%;
+    width: 72%;
     margin: 0 auto;
 }
 
-.catalog-heading:hover {
+.catalog-item p:hover {
     text-decoration-line: underline;
 }
 
-.catalog-heading:active {
+.catalog-item p:active {
     text-decoration-line: underline;
 }
 
@@ -73,7 +73,7 @@
 .img4 {
     background-image: url('../images/accessories.jpg');
     background-color: #D5D4E1;
-    margin-left: 195px;
+    margin-left: 208px;
 }
 
 .img5 {
@@ -86,7 +86,7 @@
     background-color: #E5EAF8;
 }
 
-.catalog-produkt {
+.catalog-product {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -94,9 +94,15 @@
     line-height: 46px;
     text-transform: uppercase;
     color: #1E0606;
+    margin-bottom: 24px;
 }
 
-.produkt {
+.product {
     width: 680px;
-    margin: 0px -10px 55px 196px;
+    margin: 0px -10px 55px 199px;
+}
+
+.product p {
+    margin-bottom: 15px;
+    margin-top: 0;
 }
