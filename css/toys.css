@@ -23,7 +23,6 @@
 
 .toys-form {
     display: flex;
-    /* justify-content: space-between; */
     align-items: flex-start;
 }
 
@@ -57,15 +56,6 @@
 .toys-box-amount {
     margin-right: 61px;
 }
-
-/* .toys-box,
-.range {
-    margin: 42px 0 27px 2px;
-}
-
-.toys-box li {
-    margin-bottom: 15px;
-} */
 
 legend,
 .range {
@@ -114,7 +104,6 @@ legend,
 .toys-form button {
     margin-top: 79px;
 }
-
 
 /*RANGE*/
 
@@ -179,7 +168,6 @@ input[type=range]::-webkit-slider-thumb {
     top: 90px;
     border: none;
     font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 29px;
@@ -191,7 +179,6 @@ input[type=range]::-webkit-slider-thumb {
     background-position: center;
     display: flex;
     align-items: center;
-    
 }
 
 .toys-item:hover::after {
