@@ -1,0 +1,42 @@
+
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-support {
+    width: 380px;
+}
+
+.contact-support p {
+    margin-top: 0;
+}
+
+.contact-help {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #C29974;
+}
+
+.contact-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #1E0606;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.contact label {
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0;
+}
+

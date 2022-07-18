@@ -1,0 +1,62 @@
+
+
+.blog-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #1E0606;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    justify-content: space-between;
+}
+
+.blog-list li {
+    width: 380px;
+    margin-bottom: 13px;
+}
+
+
+.blog-item {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    line-height: 31px;
+    color: #1E0606;
+    margin: 0;
+}
+
+.blog-data {
+    font-size: 16px;
+    line-height: 22px;
+    color: #818181;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.blog-text {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+}
+
+.blog-list a:hover .blog-item {
+    text-decoration-line: underline;
+}
+
+.blog-list a:active .blog-item {
+    text-decoration-line: underline;
+}
+
+
+
+
+
