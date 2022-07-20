@@ -57,7 +57,6 @@ a {
 
 .button:active {
     background: #CFAF91;
-    cursor: none;
 }
 
 .button:disabled  {
@@ -147,17 +146,6 @@ a {
     top: 8px;
     right: -28px;
 }
-
-/* .breadcrumbs::after {
-    top: 8px;
-    left: 60px;
-}
-
-.toys-home::after {
-    top: 8px;
-    left: 77px;
-} */
-
 
 .crumbs p {
     font-family: 'Crimson Text';
@@ -291,13 +279,13 @@ a {
     width: 380px;
 }
 
-.footer-dl {
+.down a {
     color: #A2A2A2;
     width: 380px;
 }
 
-.footer-dl:hover,
-.footer-dl:active {
+.down a:hover,
+.down a:active {
     text-decoration-line: underline;
     color: #FFFFFF;
 }
@@ -306,9 +294,9 @@ a {
     display: flex;
 }
 
-.email-wrapper .placeholder-shown {
+/* .email-wrapper .placeholder-shown {
     color: #EBEBEB;
-}
+} */
 
 .email {
     background-color: #666666;
@@ -317,13 +305,21 @@ a {
     border: 1px solid #666666;
     font-size: 16px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: #EBEBEB;
     padding: 9px 0px 9px 15px;
 }
 
 .email:hover,
 .email:active {
     border: 1px solid #FFFDFD;
+}
+
+.email:focus {
+    border-color: #FFFDFD;
+}
+
+.email::-webkit-input-placeholder { 
+    color: #EBEBEB; 
 }
 
 .footer-color a:hover {
@@ -582,6 +578,7 @@ fieldset {
     text-transform: uppercase;
     margin: 32px;
     text-decoration: none;
+    color: #1E0606;
 }
   
 .pagination a.active {
@@ -591,6 +588,8 @@ fieldset {
 .pagination a:hover:not(.active) {
     color: #AAAAAA;
 }
+
+
 
 .category-item,
 .delivery-img,
